@@ -5,5 +5,5 @@ where two pointers move at different speeds or from different directions to meet
 
 ## Problem List
 
-- [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/?envType=problem-list-v2&envId=xfwsaf47)
+- [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/description/)
 - [Rotate Array](https://leetcode.com/problems/rotate-array/description/)
