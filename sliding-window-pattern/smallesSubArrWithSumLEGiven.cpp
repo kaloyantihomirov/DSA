@@ -5,7 +5,7 @@ using namespace std;
 
 int smallestSubArr(std::vector<int>& nums, int targetSum)
 {
-    int smallestArrSize = nums.size();
+    int smallestArrSize = nums.size() + 1;
     int currentSum = 0;
     int currentArrSize = 0;
     int left = 0;
@@ -28,7 +28,7 @@ int smallestSubArr(std::vector<int>& nums, int targetSum)
         }
     }
 
-    return smallestArrSize;
+    return smallestArrSize == nums.size() + 1 ? 0 : smallestArrSize;
 }
 
 int main()
