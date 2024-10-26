@@ -1,4 +1,4 @@
-/* Решението е на следната задача, която се е падала на изпит по СДА на специалност СИ във ФМИ, СУ. */
+/* Решението е на следната задача, която се е падала на изпит по СДА на специалност СИ във ФМИ, СУ: https://www.hackerrank.com/contests/exam-2022-part2-sda/challenges/puncakes/problem. */
 
 #include <iostream>
 #include <vector>
