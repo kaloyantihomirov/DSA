@@ -1,4 +1,4 @@
-/* Задачата е от второто домашно по курса СДА 2024-2025 на СИ, ФМИ. 
+/* Задачата е от второто домашно на курса по СДА 2024-2025 на СИ, ФМИ. 
   Линк в HackerRank: https://www.hackerrank.com/contests/sda-24-25-2/challenges (Problem 01) */
 
 #include <iostream>
