@@ -31,36 +31,35 @@ private:
 
     int f(vector<int>& nums, int l, int r, int target)
     {
-        if (l < 0 || r >= nums.size())
+        if (l < 0 || r >= nums.size() || r < l)
         {
             return -1;
         }
 
-        if (l == r)
-        {
-            return nums[l] == target ? l : -1;
-        }
-
         int m = l + (r - l) / 2;
 
-        if (nums[m] < nums[r] && target >= nums[m] && target <= nums[r])
+        if (nums[m] <= nums[r])
         {
-            return binarySearch(nums, m, r, target);
-        }
-        else if (nums[m] > nums[l] && target >= nums[l] && target <= nums[m])
-        {
-            return binarySearch(nums, l, m, target);
-        }
-        else if (nums[m] < nums[r])
-        {
+            if (target >= nums[m] && target <= nums[r])
+            {
+                return binarySearch(nums, m, r, target);
+            }
+
             r = m - 1;
             return f(nums, l, r, target);
         }
         else
         {
+            if (target >= nums[l] && target <= nums[m])
+            {
+                return binarySearch(nums, l, m, target);
+            }
+
             l = m + 1;
             return f(nums, l, r, target);
         }
+
+        return -1;
     }
 public:
     int search(vector<int>& nums, int target) 
