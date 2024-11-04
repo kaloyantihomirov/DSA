@@ -219,9 +219,8 @@ void SinglyLinkedList::replace(int X)
             {
                 prev->next = new Node(1);
                 prev = prev->next;
-                size++;
             }
-            size--;
+            size += X - 1;
             if (curr == tail)
             {
                 tail = prev;
