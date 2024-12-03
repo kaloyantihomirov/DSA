@@ -17,6 +17,7 @@ int minConsecutiveCards(const std::vector<size_t>& cards)
         {
             minLen = std::min(minLen, currWindowLen);
             size_t firstCardInWindow = cards[i - (currWindowLen - 1)];
+            //the idea is that the firstCardInWindow may or may NOT be the same card as cards[i]
             cardsCount[firstCardInWindow]--;
             currWindowLen--;
         }
